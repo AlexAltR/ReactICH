@@ -1,0 +1,56 @@
+// Подключаем файл `_reset.sass` с базовыми сбросами стилей
+@use '_reset'
+
+// Глобальные стили для `.header`, `.main` и `.footer`
+// Добавляем плавный переход при изменении свойств (например, цвета, фона)
+.header, .main, .footer
+    transition: 0.3s
+
+// Стили для основного содержимого страницы `.main`
+.main
+    // Светлая тема (`.main--light`)
+    &--light
+        background-color: #c5dfe7 // Светлый фон
+        color: #224753 // Темный цвет текста
+        border-top: 3px solid #224753 // Темный верхний бордер
+        border-bottom: 3px solid #224753 // Темный нижний бордер
+
+    // Темная тема (`.main--dark`)
+    &--dark
+        background-color: #224753 // Темный фон
+        color: #c5dfe7 // Светлый цвет текста
+        border-top: 3px solid #c5dfe7 // Светлый верхний бордер
+        border-bottom: 3px solid #c5dfe7 // Светлый нижний бордер
+
+// Стили для `.header` и `.footer` (Одинаковые для этих секций)
+.header,
+.footer
+    // Светлая тема (`.header--light`, `.footer--light`)
+    &--light
+        background-color: #add8e6 // Светлый фон
+        color: #224753 // Темный цвет текста
+
+    // Темная тема (`.header--dark`, `.footer--dark`)
+    &--dark
+        background-color: #224753 // Темный фон
+        color: #add8e6 // Светлый цвет текста
+
+// Стили для кнопки переключения темы `.button-toggle`
+.button-toggle
+    transition: 0.3s // Плавное изменение состояния при переключении
+
+    // Светлая тема (`.button-toggle--light`)
+    &--light
+        background-color: #add8e6 // Светлый фон кнопки
+        color: #224753 // Темный текст
+        border: 2px solid blue // Синяя граница
+
+    // Темная тема (`.button-toggle--dark`)
+    &--dark
+        background-color: blue // Синий фон кнопки
+        color: #add8e6 // Светлый текст
+        border: 2px solid #add8e6 // Светлая граница
+
+    // При наведении на кнопку
+    &:hover
+        scale: 1.05 // Увеличиваем кнопку на 5%

@@ -1,0 +1,46 @@
+# Лог-файлы
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node.js зависимости
+node_modules/
+
+# Файлы сборки Vite
+dist/
+dist-ssr/
+
+# Кеш Vite
+.vite/
+
+# Файлы окружения (переменные среды)
+.env
+.env.local
+.env.*.local
+
+# Файлы блокировки зависимостей (чтобы избежать конфликтов между разработчиками)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Файлы среды разработки
+*.local
+
+# Конфигурация редакторов кода
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Системные файлы (Windows/macOS)
+.DS_Store
+Thumbs.db
